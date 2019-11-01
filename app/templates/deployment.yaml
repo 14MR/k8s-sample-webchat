@@ -43,7 +43,7 @@ spec:
               port: http
           env:
             - name: MONGO_URL
-              value: mongodb://mongodb-replicaset-0.mongodb-replicaset.default.svc.cluster.local:27017/mydb
+              value: mongodb://mongodb-replicaset-0.mongodb-replicaset.default.svc.cluster.local:27017,mongodb-replicaset-1.mongodb-replicaset.default.svc.cluster.local:27017,mongodb-replicaset-2.mongodb-replicaset.default.svc.cluster.local:27017/mydb?replicaSet=rs0
             - name: ROOT_URL
               value: http://0.0.0.0
           resources:
